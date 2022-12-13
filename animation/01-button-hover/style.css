@@ -16,4 +16,19 @@ button {
   font-size: 18px;
   padding: 16px 24px;
   text-align: center;
+  transition: 0.3s;
+}
+
+/* attempted solution (including transition property above) -- still works!
+button:hover {
+  font-size: 24px;
+  padding: 24px 32px;
+} */
+
+button {
+  transition: transform .3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.2);
 }
