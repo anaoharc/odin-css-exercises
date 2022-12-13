@@ -40,8 +40,14 @@ button {
   opacity: 0%;
   text-align: center;
 }
+
+.popup-modal {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+  transform: translate(-50%, -100%);
+}
+
 .popup-modal p {
-  margin-bottom: 24px
+  margin-bottom: 24px;
 }
 
 .backdrop {
@@ -55,9 +61,9 @@ button {
 .popup-modal.show {
   opacity: 100%;
   pointer-events: all;
+  transform: translate(-50%, -50%);
 }
 
 .backdrop.show {
   opacity: 30%;
 }
-
